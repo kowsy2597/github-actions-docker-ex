@@ -17,6 +17,6 @@ jobs:
     - name: docker login
       run:  docker login -u kowsy25 -p dckr_pat_Js7Knis5hi6XzkDzMveGEXYc1mM
     - name: Build the Docker image
-      run:  docker build . --file Dockerfile --tag my-image-name:v1
+      run:  docker build . --file Dockerfile --tag kowsy25/my-image-name:v1
     - name: push docker image
       run: docker push kowsy25/my-image-name:v1
